@@ -109,6 +109,19 @@ To rebrand the starter for your project, replace the following values:
 
 ---
 
+## Documentation & Agent Guides
+
+Comprehensive documentation and instructions for developers and AI agents:
+
+- **[AGENTS.md](AGENTS.md)**: Agent instructions, map of code, commands, quality gates, and guardrails.
+- **[GEMINI.md](GEMINI.md)**: Operational coding rules and the simplicity ladder.
+- **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**: Detailed system architecture, technology stack, and derivation guidance.
+- **[docs/DECISIONS.md](docs/DECISIONS.md)**: Architectural Decision Records (ADRs).
+- **[docs/ROADMAP.md](docs/ROADMAP.md)**: Starter baseline, derivation onboarding checklist, and roadmap template.
+- **[docs/exec-plans/](docs/exec-plans/active/README.md)**: Structured execution plans (active and completed).
+
+---
+
 ## Design Philosophy
 
 This starter embraces **YAGNI** (You Aren't Gonna Need It) and modern web standards:

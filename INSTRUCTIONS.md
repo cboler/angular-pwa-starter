@@ -2,33 +2,14 @@
 
 This repository is an **Angular PWA Starter** optimized for hosting on **GitHub Pages**.
 
-When working in this repository or any project created from this template, follow these guidelines:
+> **Note**: Comprehensive agent guidelines and architectural documentation are maintained in:
+>
+> - [AGENTS.md](AGENTS.md): Repository role, code map, development commands, quality gates, and guardrails.
+> - [GEMINI.md](GEMINI.md): Operational coding rules, the simplicity ladder, and development constraints.
+> - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md): System architecture, technology stack, routing, PWA offline strategy, and downstream guidance.
+> - [docs/DECISIONS.md](docs/DECISIONS.md): Architectural Decision Records (ADRs).
+> - [docs/ROADMAP.md](docs/ROADMAP.md): Template baseline, derivation onboarding checklist, and project roadmap template.
+> - [docs/exec-plans/active/](docs/exec-plans/active/README.md): Active execution plans for non-trivial tasks.
+> - [docs/exec-plans/completed/](docs/exec-plans/completed/README.md): Archived, verified execution plans.
 
-## Core Principles
-
-1. **Preserve PWA & Deployment Infrastructure**:
-   - Keep the Angular Service Worker (`@angular/service-worker`, `ngsw-config.json`), Web App Manifest (`public/manifest.webmanifest`), and GitHub Actions Pages deployment workflows intact unless a project requirement explicitly dictates modifying them.
-   - Maintain the SPA 404 fallback mechanism (`scripts/prepare-pages.mjs`) to ensure client-side routing survives direct navigation and browser refreshes on GitHub Pages.
-
-2. **Replace Placeholder UI**:
-   - The initial components (`src/app/home/` and `src/app/status/`) and header branding are demonstration placeholders meant to be replaced with your application's domain UI.
-   - Update branding metadata in `src/index.html`, `public/manifest.webmanifest`, and app icons in `public/icons/`.
-
-3. **Preserve Responsive & Accessibility Standards**:
-   - Adhere to the mobile-first foundations defined in `src/styles.scss` (system font stack, accessible `:focus-visible` outlines, touch targets >= 44px, safe-area insets, and reduced-motion support).
-   - Prevent accidental horizontal overflow across all viewports (phone portrait, phone landscape, tablet, desktop).
-
-4. **Run Quality & Validation Gates**:
-   Before completing substantial changes, verify that the suite passes cleanly:
-
-   ```bash
-   npm run lint          # ESLint static analysis
-   npm run format:check  # Prettier formatting verification
-   npm test              # Vitest unit test suite
-   npm run build         # Production Angular bundle
-   npm run e2e           # Playwright multi-viewport smoke tests
-   ```
-
-5. **Document Architectural Changes**:
-   - Keep `README.md` accurate if you alter deployment patterns, add major dependencies, or change project structure.
-   - Avoid adding unnecessary external libraries or layers of abstraction without clear justification (YAGNI).
+When working in this repository or any project created from this template, adhere to the principles, guardrails, and validation commands outlined in [AGENTS.md](AGENTS.md) and [GEMINI.md](GEMINI.md).
